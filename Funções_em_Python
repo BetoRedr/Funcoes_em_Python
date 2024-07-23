@@ -1,6 +1,22 @@
 #Função para transformar Range em Lista
-def converter_range_em_lista():
-  lista = list(map(str, range(10)))
+def converter_range_em_lista(variavelrange):
+  lista = list(map(str, variavelrange))
   lista[0:] = map(int, lista[0:])
-  print(lista)
 
+
+#Alterar letra de uma String
+def alterar_letra_de_uma_string(str, str1, str2):
+  #str = input("Digite a palavra que você deseja editar.")
+  str="ABBBCD"
+
+  #str1 = input("digite a letra que você que esteja na palavra")
+  str1 = "//"
+
+  #str2 = input("Digite a posição da letra que você quer remover")
+  #index = str2
+  index=0
+
+  str = str[:index] + chr(ord(str1)) + str[index + 1:]
+  print(str)
+  #index é a posição da string a ser alterada
+  #Saída: \BBBCD
