@@ -4,7 +4,7 @@ def converter_range_em_lista(variavelrange):
   lista[0:] = map(int, lista[0:])
 
 
-#Alterar letra de uma String
+#Função para alterar letra de uma String
 def alterar_letra_de_uma_string(str, str1, str2):
   #str = input("Digite a palavra que você deseja editar.")
   str="ABBBCD"
