@@ -1,0 +1,6 @@
+#Função para transformar Range em Lista
+def converter_range_em_lista():
+  lista = list(map(str, range(10)))
+  lista[0:] = map(int, lista[0:])
+  print(lista)
+
