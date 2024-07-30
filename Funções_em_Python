@@ -29,3 +29,11 @@ def converter_string_em_lista(string):
        lista.append(str(elemento))
 
 #Converter lista em string
+def converter_string_em_lista(string):
+nome = ['a', ' ', 'lista', ' ', 'vai', ' ','estar', ' ','aqui']
+nome_novo = ""
+x = 0
+while x < len(nome):
+    nome_novo = nome_novo+nome[x]
+    x += 1
+    print(nome_novo)
