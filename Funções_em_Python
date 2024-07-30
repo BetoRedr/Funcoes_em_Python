@@ -20,3 +20,12 @@ def alterar_letra_de_uma_string(str, str1, str2):
   print(str)
   #index é a posição da string a ser alterada
   #Saída: \BBBCD
+
+#Converter string em lista
+def converter_string_em_lista(string):
+    global lista
+    lista = []
+    for elemento in string:
+       lista.append(str(elemento))
+
+#Converter lista em string
