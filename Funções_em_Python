@@ -37,3 +37,12 @@ while x < len(nome):
     nome_novo = nome_novo+nome[x]
     x += 1
     print(nome_novo)
+
+#string.isalpha() Este método de classificação de caracteres retorna True se uma string contiver caracteres unicode, e Falso de outra forma. Se tiver espaço retorna false.
+#string.isdecimal() Este método de classificação de caracteres retorna true se um caractere for um número inteiro no sistema de números Base 10. Se tiver números decimais retorna false.
+#string.isdigit() Este método de classificação de caracteres retorna true se um símbolo é uma expressão dos dez números decimais. Isso oferece suporte para subscritos Unicode, sobrescritos e similares
+#string.isnumeric() Este método de classificação de caracteres retorna True se um símbolo pode ser conceitualmente interpretado como um número, mesmo que os próprios dígitos decimais não sejam usados. Isso adiciona suporte para numerais romanos, frações, numeradores de moeda e muito mais
+#string.isalnum() Este método de classificação de caracteres retorna True se qualquer uma das quatro condições anteriores for true.
+#string.isspace() Este método de classificação de caracteres retorna true se a string representa um espaço em branco caractere (espaço, guia ou nova linha, incluindo \t, \r, \n)
+#string.isprintable() Este método de classificação de caracteres retorna true se tudo os caracteres na cadeia de caracteres são imprimíveis. Ou seja, se sai são mostrados visívelmente na função print(). Em geral, caracteres de controle como os vistos na seção anterior que especificam novas linhas, retornos de carro, separadores e assim por diante não serão considerados imprimíveis.
+#string.isidentifier() Esse método de classificação de caracteres retorna true se uma string for um nome válido para um objeto Python, seja uma variável, uma função, uma classe, um módulo, etc. A string deve seguir as regras do Python para nomear objetos; em outras palavras, ela deve começar com uma letra e pode conter qualquer número decimal 0-9 ou sublinhados. No entanto, este método não pode verificar se um identificador desejado é ou não um palavra-chave reservada.
