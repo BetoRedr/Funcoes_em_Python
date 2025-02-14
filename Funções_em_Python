@@ -46,3 +46,45 @@ while x < len(nome):
 #string.isspace() Este método de classificação de caracteres retorna true se a string representa um espaço em branco caractere (espaço, guia ou nova linha, incluindo \t, \r, \n)
 #string.isprintable() Este método de classificação de caracteres retorna true se tudo os caracteres na cadeia de caracteres são imprimíveis. Ou seja, se sai são mostrados visívelmente na função print(). Em geral, caracteres de controle como os vistos na seção anterior que especificam novas linhas, retornos de carro, separadores e assim por diante não serão considerados imprimíveis.
 #string.isidentifier() Esse método de classificação de caracteres retorna true se uma string for um nome válido para um objeto Python, seja uma variável, uma função, uma classe, um módulo, etc. A string deve seguir as regras do Python para nomear objetos; em outras palavras, ela deve começar com uma letra e pode conter qualquer número decimal 0-9 ou sublinhados. No entanto, este método não pode verificar se um identificador desejado é ou não um palavra-chave reservada.
+
+
+#Função para renomear arquivos xml em uma pasta no Windows
+import os, os.path
+w, x, y, v = 0, 0, 0, 0
+
+#Comando para identificar onde o arquivo .py se encontra.
+folder = os.path.dirname(os.path.realpath(_file_))+"\\"
+
+#Comando para definir o local da pasta.
+#folder = r"C:\Users\Peter Parker\Downloads\W-TI_testes\\"
+
+#Comando para selecionar pasta que deseja renomear arquivos.
+"""from tkinter.filedialog import askdirectory
+folder = askdirectory(title="Selecione a pasta para operação")"""
+
+for file_name in os.listdir(folder):
+
+    old_name = folder + file_name
+
+    if old_name.find(".xml") > 0:
+        w = len(old_name)
+        x = old_name.find("@")
+        z = old_name.find(".xml")
+
+        if old_name.find("current") > 0:
+            y = old_name.find("current")
+            new_name = old_name[0:x+1] + "openf-srv_current.xml"
+            
+            if old_name != new_name:
+                os.rename(old_name, new_name)
+
+        else:
+            new_name = old_name[0:x+1] + "openf-srv.xml"
+            
+            if old_name != new_name:
+                os.rename(old_name, new_name)
+
+print("Operação Concluída.")
+
+if not old_name.find(".xml") > 0:
+    print("Nenhum arquivo xml encontrado.")
